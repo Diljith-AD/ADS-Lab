@@ -119,7 +119,7 @@ void insmid()
 		newnode->next=temp;
 		temp->prev=newnode;
 		newnode->prev=temp1;
-		temp->next=newnode;
+		temp1->next=newnode;
 	}
 }
 void insend()
@@ -189,7 +189,7 @@ void delend()
 		temp1=temp;
 		temp=temp->next;
 	}
-	temp->next=NULL;
+	temp1->next=NULL;
 }
 void search()
 {
