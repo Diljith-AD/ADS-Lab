@@ -72,20 +72,20 @@ void output(int c[])
 	for(i=1;i<=9;i++)
 	{
 		if(c[i]!=0)
-		printf("%d",i);
+			printf("%d\t",i);
 	}
 }
 void setunion()
 {
 	int i,c[10];
-	for(i=1;i<=0;i++)
+	for(i=1;i<=9;i++)
 	{
 		if (a[i]!=b[i])
-		   c[i]=1;
+			c[i]=1;
 		else
-		   c[i]=a[i];
+			c[i]=a[i];
 	}
-	for(i=1;1<=9;i++)
+	for(i=1;i<=9;i++)
 	{
 		printf("%d",c[i]);
 	}
@@ -97,9 +97,9 @@ void intersection()
 	for(i=1;i<=9;i++)
 	{
 		if (a[i]==b[i])
-		    c[i]=a[i];
+			c[i]=a[i];
 		else
-		    c[i]=0;
+			c[i]=0;
 	}
 	for(i=1;i<=9;i++)
 	{
@@ -113,9 +113,9 @@ void difference()
 	for(i=1;i<=9;i++)
 	{
 		if(a[i]==1&&b[i]==0)
-		   c[i]=1;
+			c[i]=1;
 		else
-		   c[i]=0;
+			c[i]=0;
 	}
 	for(i=1;i<=9;i++)
 	{
