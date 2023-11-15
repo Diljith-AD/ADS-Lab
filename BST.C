@@ -96,7 +96,7 @@ int main()
 		}
 		printf("\n_______\nDo you want to continue?(y/n)");
 		fflush(stdin);
-		scanf("%d",&userActive);
+		scanf("%c",&userActive);
 	}
 	return 0;
 }
@@ -105,7 +105,7 @@ struct node*create_node(int data)
 	struct node*new_node=(struct node*)malloc(sizeof(struct node));
 	if(new_node==NULL)
 	{
-		printf("\nMemory for new node can't be allocated");\
+		printf("\nMemory for new node can't be allocated");
 		return NULL;
 	}
 	new_node->data=data;
@@ -230,7 +230,7 @@ void printtree(struct node*t,int level)
 	if(t!=NULL)
 	{
 		printtree(t->left,level+1);
-		for(i=0;i<level;i++);
+		for(i=0;i<level;i++)
 		{
 			printf(" ");
 		}
